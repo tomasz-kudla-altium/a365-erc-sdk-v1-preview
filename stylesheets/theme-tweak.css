@@ -58,16 +58,7 @@ h3.doc.doc-heading {
   background: var(--md-default-bg-color);
 }
 
-.md-typeset h3.sdk-class {
-  margin-top: 2rem;
-  padding-top: 1rem;
-  border-top: 1px solid var(--md-default-fg-color--lightest);
-}
-
-.md-typeset h4.sdk-field {
-  margin-bottom: .35rem;
-}
-
-.sdk-field + pre, .sdk-field + .highlight {
-  border-left: .15rem solid var(--md-accent-fg-color);
+.doc-attribute .doc-label {
+  font-weight: normal;
+  color: var(--md-default-fg-color--light);
 }
