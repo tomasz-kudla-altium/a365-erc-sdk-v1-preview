@@ -12,6 +12,8 @@
         <link rel="prev" href="index.html">
       
       
+        <link rel="next" href="checks.html">
+      
       
         
       
@@ -21,7 +23,7 @@
     
     
       
-        <title>SDK v1 Reference - Altium ERC SDK Docs</title>
+        <title>Altium API - Altium ERC SDK Docs</title>
       
     
     
@@ -66,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#python-sdk-v1-reference" class="md-skip">
+        <a href="#altium-api" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              SDK v1 Reference
+              Altium API
             
           </span>
         </div>
@@ -212,7 +214,26 @@
   
     
   
-  SDK v1 Reference
+  Altium API
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="checks.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Checks
 
       </a>
     </li>
@@ -314,7 +335,7 @@
   <span class="md-ellipsis">
     
   
-    SDK v1 Reference
+    Altium API
   
 
     
@@ -332,7 +353,7 @@
   <span class="md-ellipsis">
     
   
-    SDK v1 Reference
+    Altium API
   
 
     
@@ -356,6 +377,28 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#project-data-loading" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project data loading
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Graph navigation
+      
+    </span>
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#public-api" class="md-nav__link">
@@ -441,45 +484,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#altium_api.v1.ValidationResult" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ValidationResult
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="ValidationResult">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#altium_api.v1.ValidationResult.add_violation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        add_violation
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#altium_api.v1.ValidationResult.to_result" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        to_result
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#altium_api.v1.get_project_parameters" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -513,41 +517,19 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#models" class="md-nav__link">
+  <a href="#classes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Models
+        Classes
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Models">
+    <nav class="md-nav" aria-label="Classes">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#booleanheuristic" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        BooleanHeuristic
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#desprojectparameter" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        DesProjectParameter
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#designdata" class="md-nav__link">
+  <a href="#altium_api.v1.DesignData" class="md-nav__link">
     <span class="md-ellipsis">
       
         DesignData
@@ -555,10 +537,160 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="DesignData">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignData.configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        configuration
+      
+    </span>
+  </a>
+  
 </li>
         
           <li class="md-nav__item">
-  <a href="#designdatacomponent" class="md-nav__link">
+  <a href="#altium_api.v1.DesignData.project_guid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        project_guid
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignData.schematic_model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        schematic_model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignData.schematics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        schematics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignData.variants" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        variants
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignData.version" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        version
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.BooleanHeuristic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BooleanHeuristic
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="BooleanHeuristic">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.BooleanHeuristic.confidence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        confidence
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.BooleanHeuristic.value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        value
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesProjectParameter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DesProjectParameter
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DesProjectParameter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesProjectParameter.name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        name
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesProjectParameter.value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        value
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent" class="md-nav__link">
     <span class="md-ellipsis">
       
         DesignDataComponent
@@ -566,10 +698,280 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="DesignDataComponent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent.comment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        comment
+      
+    </span>
+  </a>
+  
 </li>
         
           <li class="md-nav__item">
-  <a href="#designdatacomponentparameter" class="md-nav__link">
+  <a href="#altium_api.v1.DesignDataComponent.component_category" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        component_category
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent.component_group" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        component_group
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent.component_type" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        component_type
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent.description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        description
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent.design_component_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        design_component_id
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent.designator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        designator
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent.document_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        document_id
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent.footprint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        footprint
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent.hierarchy_path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        hierarchy_path
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent.is_passive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        is_passive
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent.library_component_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        library_component_id
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent.library_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        library_id
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent.mpn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        mpn
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent.parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        parameters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent.pins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        pins
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent.pins_definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        pins_definitions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent.sheet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        sheet
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent.tag_types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        tag_types
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent.test" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        test
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent.unique_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        unique_id
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent.value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        value
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent.variant_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        variant_id
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent.variant_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        variant_name
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponentParameter" class="md-nav__link">
     <span class="md-ellipsis">
       
         DesignDataComponentParameter
@@ -577,10 +979,38 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="DesignDataComponentParameter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponentParameter.name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        name
+      
+    </span>
+  </a>
+  
 </li>
         
           <li class="md-nav__item">
-  <a href="#designdataconfiguration" class="md-nav__link">
+  <a href="#altium_api.v1.DesignDataComponentParameter.value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        value
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataConfiguration" class="md-nav__link">
     <span class="md-ellipsis">
       
         DesignDataConfiguration
@@ -588,10 +1018,27 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="DesignDataConfiguration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataConfiguration.custom_checks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        custom_checks
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
-  <a href="#designdatacustomcheckconfigurationitem" class="md-nav__link">
+  <a href="#altium_api.v1.DesignDataCustomCheckConfigurationItem" class="md-nav__link">
     <span class="md-ellipsis">
       
         DesignDataCustomCheckConfigurationItem
@@ -599,10 +1046,49 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="DesignDataCustomCheckConfigurationItem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataCustomCheckConfigurationItem.custom_check_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        custom_check_id
+      
+    </span>
+  </a>
+  
 </li>
         
           <li class="md-nav__item">
-  <a href="#designdatadifferentialpair" class="md-nav__link">
+  <a href="#altium_api.v1.DesignDataCustomCheckConfigurationItem.error_report_level" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        error_report_level
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataCustomCheckConfigurationItem.name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        name
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataDifferentialPair" class="md-nav__link">
     <span class="md-ellipsis">
       
         DesignDataDifferentialPair
@@ -610,10 +1096,38 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="DesignDataDifferentialPair">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataDifferentialPair.negative_net" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        negative_net
+      
+    </span>
+  </a>
+  
 </li>
         
           <li class="md-nav__item">
-  <a href="#designdataline" class="md-nav__link">
+  <a href="#altium_api.v1.DesignDataDifferentialPair.positive_net" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        positive_net
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataLine" class="md-nav__link">
     <span class="md-ellipsis">
       
         DesignDataLine
@@ -621,10 +1135,38 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="DesignDataLine">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataLine.document_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        document_id
+      
+    </span>
+  </a>
+  
 </li>
         
           <li class="md-nav__item">
-  <a href="#designdatanet" class="md-nav__link">
+  <a href="#altium_api.v1.DesignDataLine.unique_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        unique_id
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNet" class="md-nav__link">
     <span class="md-ellipsis">
       
         DesignDataNet
@@ -632,10 +1174,192 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="DesignDataNet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNet.calculated_net_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        calculated_net_name
+      
+    </span>
+  </a>
+  
 </li>
         
           <li class="md-nav__item">
-  <a href="#designdatanetitem" class="md-nav__link">
+  <a href="#altium_api.v1.DesignDataNet.color" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        color
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNet.diff_pair" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        diff_pair
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNet.diff_pair_classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        diff_pair_classes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNet.diff_pair_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        diff_pair_name
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNet.is_diff_pair" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        is_diff_pair
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNet.is_power" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        is_power
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNet.lines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        lines
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNet.name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        name
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNet.net_classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        net_classes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNet.net_items" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        net_items
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNet.parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        parameters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNet.pins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        pins
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNet.rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        rules
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNet.scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        scope
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNet.unique_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        unique_id
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNetItem" class="md-nav__link">
     <span class="md-ellipsis">
       
         DesignDataNetItem
@@ -643,10 +1367,82 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="DesignDataNetItem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNetItem.document_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        document_id
+      
+    </span>
+  </a>
+  
 </li>
         
           <li class="md-nav__item">
-  <a href="#designdatanetparameter" class="md-nav__link">
+  <a href="#altium_api.v1.DesignDataNetItem.kind" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        kind
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNetItem.port_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        port_name
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNetItem.unique_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        unique_id
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNetItem.variant_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        variant_id
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNetItem.variant_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        variant_name
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNetParameter" class="md-nav__link">
     <span class="md-ellipsis">
       
         DesignDataNetParameter
@@ -654,10 +1450,38 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="DesignDataNetParameter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNetParameter.name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        name
+      
+    </span>
+  </a>
+  
 </li>
         
           <li class="md-nav__item">
-  <a href="#designdatapin" class="md-nav__link">
+  <a href="#altium_api.v1.DesignDataNetParameter.value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        value
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataPin" class="md-nav__link">
     <span class="md-ellipsis">
       
         DesignDataPin
@@ -665,10 +1489,192 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="DesignDataPin">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataPin.description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        description
+      
+    </span>
+  </a>
+  
 </li>
         
           <li class="md-nav__item">
-  <a href="#designdatapinparameter" class="md-nav__link">
+  <a href="#altium_api.v1.DesignDataPin.designator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        designator
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataPin.direction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        direction
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataPin.document_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        document_id
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataPin.electrical_type" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        electrical_type
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataPin.full_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        full_name
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataPin.functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        functions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataPin.name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        name
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataPin.net" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        net
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataPin.no_connect" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        no_connect
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataPin.number" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        number
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataPin.parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        parameters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataPin.propagation_delay" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        propagation_delay
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataPin.unique_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        unique_id
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataPin.variant_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        variant_id
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataPin.variant_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        variant_name
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataPinParameter" class="md-nav__link">
     <span class="md-ellipsis">
       
         DesignDataPinParameter
@@ -676,10 +1682,38 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="DesignDataPinParameter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataPinParameter.name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        name
+      
+    </span>
+  </a>
+  
 </li>
         
           <li class="md-nav__item">
-  <a href="#designdatarule" class="md-nav__link">
+  <a href="#altium_api.v1.DesignDataPinParameter.value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        value
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataRule" class="md-nav__link">
     <span class="md-ellipsis">
       
         DesignDataRule
@@ -687,10 +1721,38 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="DesignDataRule">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataRule.attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        attributes
+      
+    </span>
+  </a>
+  
 </li>
         
           <li class="md-nav__item">
-  <a href="#designdataruleattribute" class="md-nav__link">
+  <a href="#altium_api.v1.DesignDataRule.name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        name
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataRuleAttribute" class="md-nav__link">
     <span class="md-ellipsis">
       
         DesignDataRuleAttribute
@@ -698,10 +1760,38 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="DesignDataRuleAttribute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataRuleAttribute.name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        name
+      
+    </span>
+  </a>
+  
 </li>
         
           <li class="md-nav__item">
-  <a href="#designdataschematicdocument" class="md-nav__link">
+  <a href="#altium_api.v1.DesignDataRuleAttribute.value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        value
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataSchematicDocument" class="md-nav__link">
     <span class="md-ellipsis">
       
         DesignDataSchematicDocument
@@ -709,10 +1799,49 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="DesignDataSchematicDocument">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataSchematicDocument.document_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        document_id
+      
+    </span>
+  </a>
+  
 </li>
         
           <li class="md-nav__item">
-  <a href="#designdataschematicmodel" class="md-nav__link">
+  <a href="#altium_api.v1.DesignDataSchematicDocument.file_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        file_name
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataSchematicDocument.parent_document_ids" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        parent_document_ids
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataSchematicModel" class="md-nav__link">
     <span class="md-ellipsis">
       
         DesignDataSchematicModel
@@ -720,10 +1849,38 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="DesignDataSchematicModel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataSchematicModel.components" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        components
+      
+    </span>
+  </a>
+  
 </li>
         
           <li class="md-nav__item">
-  <a href="#designdatavariant" class="md-nav__link">
+  <a href="#altium_api.v1.DesignDataSchematicModel.nets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        nets
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataVariant" class="md-nav__link">
     <span class="md-ellipsis">
       
         DesignDataVariant
@@ -731,13 +1888,14 @@
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="DesignDataVariant">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#designdatavariation" class="md-nav__link">
+  <a href="#altium_api.v1.DesignDataVariant.name" class="md-nav__link">
     <span class="md-ellipsis">
       
-        DesignDataVariation
+        name
       
     </span>
   </a>
@@ -745,13 +1903,140 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#stringheuristic" class="md-nav__link">
+  <a href="#altium_api.v1.DesignDataVariant.variant_guid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        variant_guid
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataVariant.variations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        variations
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataVariation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DesignDataVariation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DesignDataVariation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataVariation.alternate_part" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        alternate_part
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataVariation.component_designator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        component_designator
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataVariation.component_hierarchy_path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        component_hierarchy_path
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataVariation.component_unique_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        component_unique_id
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataVariation.kind" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        kind
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.StringHeuristic" class="md-nav__link">
     <span class="md-ellipsis">
       
         StringHeuristic
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="StringHeuristic">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.StringHeuristic.confidence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        confidence
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.StringHeuristic.value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        value
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -764,6 +2049,33 @@
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="checks.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Checks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -795,6 +2107,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#project-data-loading" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project data loading
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Graph navigation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#public-api" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -878,45 +2212,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#altium_api.v1.ValidationResult" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ValidationResult
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="ValidationResult">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#altium_api.v1.ValidationResult.add_violation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        add_violation
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#altium_api.v1.ValidationResult.to_result" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        to_result
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#altium_api.v1.get_project_parameters" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -950,41 +2245,19 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#models" class="md-nav__link">
+  <a href="#classes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Models
+        Classes
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Models">
+    <nav class="md-nav" aria-label="Classes">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#booleanheuristic" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        BooleanHeuristic
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#desprojectparameter" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        DesProjectParameter
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#designdata" class="md-nav__link">
+  <a href="#altium_api.v1.DesignData" class="md-nav__link">
     <span class="md-ellipsis">
       
         DesignData
@@ -992,10 +2265,160 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="DesignData">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignData.configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        configuration
+      
+    </span>
+  </a>
+  
 </li>
         
           <li class="md-nav__item">
-  <a href="#designdatacomponent" class="md-nav__link">
+  <a href="#altium_api.v1.DesignData.project_guid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        project_guid
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignData.schematic_model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        schematic_model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignData.schematics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        schematics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignData.variants" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        variants
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignData.version" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        version
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.BooleanHeuristic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BooleanHeuristic
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="BooleanHeuristic">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.BooleanHeuristic.confidence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        confidence
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.BooleanHeuristic.value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        value
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesProjectParameter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DesProjectParameter
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DesProjectParameter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesProjectParameter.name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        name
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesProjectParameter.value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        value
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent" class="md-nav__link">
     <span class="md-ellipsis">
       
         DesignDataComponent
@@ -1003,10 +2426,280 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="DesignDataComponent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent.comment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        comment
+      
+    </span>
+  </a>
+  
 </li>
         
           <li class="md-nav__item">
-  <a href="#designdatacomponentparameter" class="md-nav__link">
+  <a href="#altium_api.v1.DesignDataComponent.component_category" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        component_category
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent.component_group" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        component_group
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent.component_type" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        component_type
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent.description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        description
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent.design_component_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        design_component_id
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent.designator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        designator
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent.document_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        document_id
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent.footprint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        footprint
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent.hierarchy_path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        hierarchy_path
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent.is_passive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        is_passive
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent.library_component_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        library_component_id
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent.library_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        library_id
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent.mpn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        mpn
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent.parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        parameters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent.pins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        pins
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent.pins_definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        pins_definitions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent.sheet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        sheet
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent.tag_types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        tag_types
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent.test" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        test
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent.unique_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        unique_id
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent.value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        value
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent.variant_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        variant_id
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponent.variant_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        variant_name
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponentParameter" class="md-nav__link">
     <span class="md-ellipsis">
       
         DesignDataComponentParameter
@@ -1014,10 +2707,38 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="DesignDataComponentParameter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataComponentParameter.name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        name
+      
+    </span>
+  </a>
+  
 </li>
         
           <li class="md-nav__item">
-  <a href="#designdataconfiguration" class="md-nav__link">
+  <a href="#altium_api.v1.DesignDataComponentParameter.value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        value
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataConfiguration" class="md-nav__link">
     <span class="md-ellipsis">
       
         DesignDataConfiguration
@@ -1025,10 +2746,27 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="DesignDataConfiguration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataConfiguration.custom_checks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        custom_checks
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
-  <a href="#designdatacustomcheckconfigurationitem" class="md-nav__link">
+  <a href="#altium_api.v1.DesignDataCustomCheckConfigurationItem" class="md-nav__link">
     <span class="md-ellipsis">
       
         DesignDataCustomCheckConfigurationItem
@@ -1036,10 +2774,49 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="DesignDataCustomCheckConfigurationItem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataCustomCheckConfigurationItem.custom_check_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        custom_check_id
+      
+    </span>
+  </a>
+  
 </li>
         
           <li class="md-nav__item">
-  <a href="#designdatadifferentialpair" class="md-nav__link">
+  <a href="#altium_api.v1.DesignDataCustomCheckConfigurationItem.error_report_level" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        error_report_level
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataCustomCheckConfigurationItem.name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        name
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataDifferentialPair" class="md-nav__link">
     <span class="md-ellipsis">
       
         DesignDataDifferentialPair
@@ -1047,10 +2824,38 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="DesignDataDifferentialPair">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataDifferentialPair.negative_net" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        negative_net
+      
+    </span>
+  </a>
+  
 </li>
         
           <li class="md-nav__item">
-  <a href="#designdataline" class="md-nav__link">
+  <a href="#altium_api.v1.DesignDataDifferentialPair.positive_net" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        positive_net
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataLine" class="md-nav__link">
     <span class="md-ellipsis">
       
         DesignDataLine
@@ -1058,10 +2863,38 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="DesignDataLine">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataLine.document_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        document_id
+      
+    </span>
+  </a>
+  
 </li>
         
           <li class="md-nav__item">
-  <a href="#designdatanet" class="md-nav__link">
+  <a href="#altium_api.v1.DesignDataLine.unique_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        unique_id
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNet" class="md-nav__link">
     <span class="md-ellipsis">
       
         DesignDataNet
@@ -1069,10 +2902,192 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="DesignDataNet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNet.calculated_net_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        calculated_net_name
+      
+    </span>
+  </a>
+  
 </li>
         
           <li class="md-nav__item">
-  <a href="#designdatanetitem" class="md-nav__link">
+  <a href="#altium_api.v1.DesignDataNet.color" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        color
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNet.diff_pair" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        diff_pair
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNet.diff_pair_classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        diff_pair_classes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNet.diff_pair_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        diff_pair_name
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNet.is_diff_pair" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        is_diff_pair
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNet.is_power" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        is_power
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNet.lines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        lines
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNet.name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        name
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNet.net_classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        net_classes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNet.net_items" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        net_items
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNet.parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        parameters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNet.pins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        pins
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNet.rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        rules
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNet.scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        scope
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNet.unique_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        unique_id
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNetItem" class="md-nav__link">
     <span class="md-ellipsis">
       
         DesignDataNetItem
@@ -1080,10 +3095,82 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="DesignDataNetItem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNetItem.document_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        document_id
+      
+    </span>
+  </a>
+  
 </li>
         
           <li class="md-nav__item">
-  <a href="#designdatanetparameter" class="md-nav__link">
+  <a href="#altium_api.v1.DesignDataNetItem.kind" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        kind
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNetItem.port_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        port_name
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNetItem.unique_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        unique_id
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNetItem.variant_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        variant_id
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNetItem.variant_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        variant_name
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNetParameter" class="md-nav__link">
     <span class="md-ellipsis">
       
         DesignDataNetParameter
@@ -1091,10 +3178,38 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="DesignDataNetParameter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataNetParameter.name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        name
+      
+    </span>
+  </a>
+  
 </li>
         
           <li class="md-nav__item">
-  <a href="#designdatapin" class="md-nav__link">
+  <a href="#altium_api.v1.DesignDataNetParameter.value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        value
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataPin" class="md-nav__link">
     <span class="md-ellipsis">
       
         DesignDataPin
@@ -1102,10 +3217,192 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="DesignDataPin">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataPin.description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        description
+      
+    </span>
+  </a>
+  
 </li>
         
           <li class="md-nav__item">
-  <a href="#designdatapinparameter" class="md-nav__link">
+  <a href="#altium_api.v1.DesignDataPin.designator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        designator
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataPin.direction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        direction
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataPin.document_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        document_id
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataPin.electrical_type" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        electrical_type
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataPin.full_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        full_name
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataPin.functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        functions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataPin.name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        name
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataPin.net" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        net
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataPin.no_connect" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        no_connect
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataPin.number" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        number
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataPin.parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        parameters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataPin.propagation_delay" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        propagation_delay
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataPin.unique_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        unique_id
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataPin.variant_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        variant_id
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataPin.variant_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        variant_name
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataPinParameter" class="md-nav__link">
     <span class="md-ellipsis">
       
         DesignDataPinParameter
@@ -1113,10 +3410,38 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="DesignDataPinParameter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataPinParameter.name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        name
+      
+    </span>
+  </a>
+  
 </li>
         
           <li class="md-nav__item">
-  <a href="#designdatarule" class="md-nav__link">
+  <a href="#altium_api.v1.DesignDataPinParameter.value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        value
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataRule" class="md-nav__link">
     <span class="md-ellipsis">
       
         DesignDataRule
@@ -1124,10 +3449,38 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="DesignDataRule">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataRule.attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        attributes
+      
+    </span>
+  </a>
+  
 </li>
         
           <li class="md-nav__item">
-  <a href="#designdataruleattribute" class="md-nav__link">
+  <a href="#altium_api.v1.DesignDataRule.name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        name
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataRuleAttribute" class="md-nav__link">
     <span class="md-ellipsis">
       
         DesignDataRuleAttribute
@@ -1135,10 +3488,38 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="DesignDataRuleAttribute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataRuleAttribute.name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        name
+      
+    </span>
+  </a>
+  
 </li>
         
           <li class="md-nav__item">
-  <a href="#designdataschematicdocument" class="md-nav__link">
+  <a href="#altium_api.v1.DesignDataRuleAttribute.value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        value
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataSchematicDocument" class="md-nav__link">
     <span class="md-ellipsis">
       
         DesignDataSchematicDocument
@@ -1146,10 +3527,49 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="DesignDataSchematicDocument">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataSchematicDocument.document_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        document_id
+      
+    </span>
+  </a>
+  
 </li>
         
           <li class="md-nav__item">
-  <a href="#designdataschematicmodel" class="md-nav__link">
+  <a href="#altium_api.v1.DesignDataSchematicDocument.file_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        file_name
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataSchematicDocument.parent_document_ids" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        parent_document_ids
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataSchematicModel" class="md-nav__link">
     <span class="md-ellipsis">
       
         DesignDataSchematicModel
@@ -1157,10 +3577,38 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="DesignDataSchematicModel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataSchematicModel.components" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        components
+      
+    </span>
+  </a>
+  
 </li>
         
           <li class="md-nav__item">
-  <a href="#designdatavariant" class="md-nav__link">
+  <a href="#altium_api.v1.DesignDataSchematicModel.nets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        nets
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataVariant" class="md-nav__link">
     <span class="md-ellipsis">
       
         DesignDataVariant
@@ -1168,13 +3616,14 @@
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="DesignDataVariant">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#designdatavariation" class="md-nav__link">
+  <a href="#altium_api.v1.DesignDataVariant.name" class="md-nav__link">
     <span class="md-ellipsis">
       
-        DesignDataVariation
+        name
       
     </span>
   </a>
@@ -1182,13 +3631,140 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#stringheuristic" class="md-nav__link">
+  <a href="#altium_api.v1.DesignDataVariant.variant_guid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        variant_guid
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataVariant.variations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        variations
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataVariation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DesignDataVariation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DesignDataVariation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataVariation.alternate_part" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        alternate_part
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataVariation.component_designator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        component_designator
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataVariation.component_hierarchy_path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        component_hierarchy_path
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataVariation.component_unique_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        component_unique_id
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.DesignDataVariation.kind" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        kind
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.StringHeuristic" class="md-nav__link">
     <span class="md-ellipsis">
       
         StringHeuristic
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="StringHeuristic">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.StringHeuristic.confidence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        confidence
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium_api.v1.StringHeuristic.value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        value
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1210,6 +3786,14 @@
               
               <article class="md-content__inner md-typeset">
                 
+  <label class="sdk-version">SDK version
+    <select aria-label="SDK version" onchange="location.assign(this.value)">
+      
+        <option value="index.html" selected>v1</option>
+      
+    </select>
+  </label>
+  
                   
 
 
@@ -1217,26 +3801,59 @@
   
 
 
-<h1 id="python-sdk-v1-reference">Python SDK v1 reference</h1>
-<p>Import loaders, graph navigation and validation from <code>altium_api.v1</code>. Model
+<h1 id="altium-api">Altium API</h1>
+<p>Use <code>altium_api.v1</code> to load a design and follow its electrical connections.
+For reporting rule violations, see <a href="checks.html">Checks</a>. Model
 classes can be imported from the same namespace or accessed through <code>models</code>:</p>
 <pre><code class="language-python">from altium_api.v1 import DesignData, models
 
 assert DesignData is models.DesignData
 </code></pre>
+<h2 id="project-data-loading">Project data loading</h2>
 <p><code>load_project_data(context, input_parameters)</code> returns a <code>DesignData</code> snapshot.
 Read components and nets from <code>project.schematic_model</code>, and project metadata,
 schematics and variants from the root. Pass <code>variantName</code> or <code>variantGuid</code> in
 the input dictionary to filter the schematic model; the variant catalog stays complete.
 Use <code>get_project_parameters</code> for project-level name/value pairs.</p>
-<p>The model fields below are frozen. Collections are tuples; a required field
+<p>The <a href="#classes">model fields</a> below are frozen. Collections are tuples; a required field
 whose type includes <code>None</code> can still have a null value. Use <code>model_dump()</code> or
 <code>model_dump_json()</code> to serialize a model.</p>
+<h2 id="graph-navigation">Graph navigation</h2>
 <p>For connectivity, call <code>graph_for(project)</code> on a loaded project. For example,
 <code>graph.net_for(pin)</code> returns a net object or <code>None</code>, whereas <code>pin.net</code> is a
 string or <code>None</code>. Missing or ambiguous pin IDs do not establish a connection.
 Read classification from <code>component.component_category</code>, <code>component.component_group</code>
 and <code>net.is_power</code>; check for <code>None</code> before reading <code>value</code> or <code>confidence</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>pins_for(component)</code></td>
+<td>Pins on the component.</td>
+</tr>
+<tr>
+<td><code>nets_for(component)</code></td>
+<td>Distinct nets connected to its pins.</td>
+</tr>
+<tr>
+<td><code>net_for(pin)</code></td>
+<td>Connected net, or <code>None</code> when it cannot be resolved.</td>
+</tr>
+<tr>
+<td><code>component_for(pin)</code></td>
+<td>Owning component, or <code>None</code> when ownership is ambiguous or unknown.</td>
+</tr>
+<tr>
+<td><code>variant_for(component)</code></td>
+<td>The component's variant name, or <code>None</code>.</td>
+</tr>
+</tbody>
+</table>
 <h2 id="public-api">Public API</h2>
 
 
@@ -1374,90 +3991,6 @@ and <code>net.is_power</code>; check for <code>None</code> before reading <code>
 
 </div>
 
-<div class="doc doc-object doc-class">
-
-
-
-<h2 id="altium_api.v1.ValidationResult" class="doc doc-heading">
-            <span class="doc doc-object-name doc-class-name">ValidationResult</span>
-
-
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
-  </span>
-
-</h2>
-
-
-    <div class="doc doc-contents first">
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="doc doc-children">
-
-
-
-
-
-
-
-
-
-
-<div class="doc doc-object doc-function">
-
-
-<h3 id="altium_api.v1.ValidationResult.add_violation" class="doc doc-heading">
-            <span class="doc doc-object-name doc-function-name">add_violation</span>
-
-
-</h3>
-<div class="doc-signature highlight"><pre><span></span><code><span class="nf">add_violation</span><span class="p">(</span><span class="n">violation_reason</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">obj</span><span class="p">:</span> <span class="n">DesignObject</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
-</code></pre></div>
-
-    <div class="doc doc-contents ">
-
-
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-function">
-
-
-<h3 id="altium_api.v1.ValidationResult.to_result" class="doc doc-heading">
-            <span class="doc doc-object-name doc-function-name">to_result</span>
-
-
-</h3>
-<div class="doc-signature highlight"><pre><span></span><code><span class="nf">to_result</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]</span>
-</code></pre></div>
-
-    <div class="doc doc-contents ">
-
-
-    </div>
-
-</div>
-
-
-
-  </div>
-
-    </div>
-
-</div>
-
 <div class="doc doc-object doc-function">
 
 
@@ -1510,658 +4043,469 @@ and <code>net.is_power</code>; check for <code>None</code> before reading <code>
 
     </div>
 
-</div><h2 id="models">Models</h2>
-<h3 id="booleanheuristic">BooleanHeuristic</h3>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Python type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>confidence</code></td>
-<td><code>str</code></td>
-</tr>
-<tr>
-<td><code>value</code></td>
-<td><code>bool</code></td>
-</tr>
-</tbody>
-</table>
-<h3 id="desprojectparameter">DesProjectParameter</h3>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Python type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>name</code></td>
-<td><code>str</code></td>
-</tr>
-<tr>
-<td><code>value</code></td>
-<td><code>str</code></td>
-</tr>
-</tbody>
-</table>
-<h3 id="designdata">DesignData</h3>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Python type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>configuration</code></td>
-<td><code>DesignDataConfiguration</code></td>
-</tr>
-<tr>
-<td><code>project_guid</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>schematic_model</code></td>
-<td><code>DesignDataSchematicModel</code></td>
-</tr>
-<tr>
-<td><code>schematics</code></td>
-<td><code>tuple[DesignDataSchematicDocument, ...]</code></td>
-</tr>
-<tr>
-<td><code>variants</code></td>
-<td><code>tuple[DesignDataVariant, ...]</code></td>
-</tr>
-<tr>
-<td><code>version</code></td>
-<td><code>str \| None</code></td>
-</tr>
-</tbody>
-</table>
-<h3 id="designdatacomponent">DesignDataComponent</h3>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Python type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>comment</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>component_category</code></td>
-<td><code>StringHeuristic \| None</code></td>
-</tr>
-<tr>
-<td><code>component_group</code></td>
-<td><code>StringHeuristic \| None</code></td>
-</tr>
-<tr>
-<td><code>component_type</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>description</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>design_component_id</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>designator</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>document_id</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>footprint</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>hierarchy_path</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>is_passive</code></td>
-<td><code>bool \| None</code></td>
-</tr>
-<tr>
-<td><code>library_component_id</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>library_id</code></td>
-<td><code>int \| None</code></td>
-</tr>
-<tr>
-<td><code>mpn</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>parameters</code></td>
-<td><code>tuple[DesignDataComponentParameter \| None, ...] \| None</code></td>
-</tr>
-<tr>
-<td><code>pins</code></td>
-<td><code>tuple[DesignDataPin, ...]</code></td>
-</tr>
-<tr>
-<td><code>pins_definitions</code></td>
-<td><code>tuple[str, ...] \| None</code></td>
-</tr>
-<tr>
-<td><code>sheet</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>tag_types</code></td>
-<td><code>tuple[str, ...] \| None</code></td>
-</tr>
-<tr>
-<td><code>test</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>unique_id</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>value</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>variant_id</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>variant_name</code></td>
-<td><code>str \| None</code></td>
-</tr>
-</tbody>
-</table>
-<h3 id="designdatacomponentparameter">DesignDataComponentParameter</h3>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Python type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>name</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>value</code></td>
-<td><code>str \| None</code></td>
-</tr>
-</tbody>
-</table>
-<h3 id="designdataconfiguration">DesignDataConfiguration</h3>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Python type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>custom_checks</code></td>
-<td><code>tuple[DesignDataCustomCheckConfigurationItem, ...]</code></td>
-</tr>
-</tbody>
-</table>
-<h3 id="designdatacustomcheckconfigurationitem">DesignDataCustomCheckConfigurationItem</h3>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Python type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>custom_check_id</code></td>
-<td><code>str</code></td>
-</tr>
-<tr>
-<td><code>error_report_level</code></td>
-<td><code>str</code></td>
-</tr>
-<tr>
-<td><code>name</code></td>
-<td><code>str</code></td>
-</tr>
-</tbody>
-</table>
-<h3 id="designdatadifferentialpair">DesignDataDifferentialPair</h3>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Python type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>negative_net</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>positive_net</code></td>
-<td><code>str \| None</code></td>
-</tr>
-</tbody>
-</table>
-<h3 id="designdataline">DesignDataLine</h3>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Python type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>document_id</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>unique_id</code></td>
-<td><code>str \| None</code></td>
-</tr>
-</tbody>
-</table>
-<h3 id="designdatanet">DesignDataNet</h3>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Python type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>calculated_net_name</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>color</code></td>
-<td><code>int</code></td>
-</tr>
-<tr>
-<td><code>diff_pair</code></td>
-<td><code>DesignDataDifferentialPair \| None</code></td>
-</tr>
-<tr>
-<td><code>diff_pair_classes</code></td>
-<td><code>tuple[str, ...] \| None</code></td>
-</tr>
-<tr>
-<td><code>diff_pair_name</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>is_diff_pair</code></td>
-<td><code>bool \| None</code></td>
-</tr>
-<tr>
-<td><code>is_power</code></td>
-<td><code>BooleanHeuristic \| None</code></td>
-</tr>
-<tr>
-<td><code>lines</code></td>
-<td><code>tuple[DesignDataLine, ...]</code></td>
-</tr>
-<tr>
-<td><code>name</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>net_classes</code></td>
-<td><code>tuple[str, ...]</code></td>
-</tr>
-<tr>
-<td><code>net_items</code></td>
-<td><code>tuple[DesignDataNetItem, ...]</code></td>
-</tr>
-<tr>
-<td><code>parameters</code></td>
-<td><code>tuple[DesignDataNetParameter, ...]</code></td>
-</tr>
-<tr>
-<td><code>pins</code></td>
-<td><code>tuple[DesignDataPin, ...]</code></td>
-</tr>
-<tr>
-<td><code>rules</code></td>
-<td><code>tuple[DesignDataRule, ...]</code></td>
-</tr>
-<tr>
-<td><code>scope</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>unique_id</code></td>
-<td><code>str \| None</code></td>
-</tr>
-</tbody>
-</table>
-<h3 id="designdatanetitem">DesignDataNetItem</h3>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Python type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>document_id</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>kind</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>port_name</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>unique_id</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>variant_id</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>variant_name</code></td>
-<td><code>str \| None</code></td>
-</tr>
-</tbody>
-</table>
-<h3 id="designdatanetparameter">DesignDataNetParameter</h3>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Python type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>name</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>value</code></td>
-<td><code>str \| None</code></td>
-</tr>
-</tbody>
-</table>
-<h3 id="designdatapin">DesignDataPin</h3>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Python type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>description</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>designator</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>direction</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>document_id</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>electrical_type</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>full_name</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>functions</code></td>
-<td><code>tuple[str, ...]</code></td>
-</tr>
-<tr>
-<td><code>name</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>net</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>no_connect</code></td>
-<td><code>bool \| None</code></td>
-</tr>
-<tr>
-<td><code>number</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>parameters</code></td>
-<td><code>tuple[DesignDataPinParameter, ...]</code></td>
-</tr>
-<tr>
-<td><code>propagation_delay</code></td>
-<td><code>float \| None</code></td>
-</tr>
-<tr>
-<td><code>unique_id</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>variant_id</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>variant_name</code></td>
-<td><code>str \| None</code></td>
-</tr>
-</tbody>
-</table>
-<h3 id="designdatapinparameter">DesignDataPinParameter</h3>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Python type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>name</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>value</code></td>
-<td><code>str \| None</code></td>
-</tr>
-</tbody>
-</table>
-<h3 id="designdatarule">DesignDataRule</h3>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Python type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>attributes</code></td>
-<td><code>tuple[DesignDataRuleAttribute, ...]</code></td>
-</tr>
-<tr>
-<td><code>name</code></td>
-<td><code>str \| None</code></td>
-</tr>
-</tbody>
-</table>
-<h3 id="designdataruleattribute">DesignDataRuleAttribute</h3>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Python type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>name</code></td>
-<td><code>str</code></td>
-</tr>
-<tr>
-<td><code>value</code></td>
-<td><code>str \| None</code></td>
-</tr>
-</tbody>
-</table>
-<h3 id="designdataschematicdocument">DesignDataSchematicDocument</h3>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Python type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>document_id</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>file_name</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>parent_document_ids</code></td>
-<td><code>tuple[str, ...]</code></td>
-</tr>
-</tbody>
-</table>
-<h3 id="designdataschematicmodel">DesignDataSchematicModel</h3>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Python type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>components</code></td>
-<td><code>tuple[DesignDataComponent, ...]</code></td>
-</tr>
-<tr>
-<td><code>nets</code></td>
-<td><code>tuple[DesignDataNet, ...]</code></td>
-</tr>
-</tbody>
-</table>
-<h3 id="designdatavariant">DesignDataVariant</h3>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Python type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>name</code></td>
-<td><code>str</code></td>
-</tr>
-<tr>
-<td><code>variant_guid</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>variations</code></td>
-<td><code>tuple[DesignDataVariation, ...]</code></td>
-</tr>
-</tbody>
-</table>
-<h3 id="designdatavariation">DesignDataVariation</h3>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Python type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>alternate_part</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>component_designator</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>component_hierarchy_path</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>component_unique_id</code></td>
-<td><code>str \| None</code></td>
-</tr>
-<tr>
-<td><code>kind</code></td>
-<td><code>str</code></td>
-</tr>
-</tbody>
-</table>
-<h3 id="stringheuristic">StringHeuristic</h3>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Python type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>confidence</code></td>
-<td><code>str</code></td>
-</tr>
-<tr>
-<td><code>value</code></td>
-<td><code>str</code></td>
-</tr>
-</tbody>
-</table>
+</div><h2 id="classes">Classes</h2>
+<h3 class="sdk-class" id="altium_api.v1.DesignData"><code>DesignData</code></h3>
+<p>Represents the design data extracted from a design project.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignData.configuration"><code>configuration</code></h4>
+<pre><code class="language-python">configuration: DesignDataConfiguration
+</code></pre>
+<p>The configuration settings for the design.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignData.project_guid"><code>project_guid</code></h4>
+<pre><code class="language-python">project_guid: str | None
+</code></pre>
+<p>The identifier of the source project.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignData.schematic_model"><code>schematic_model</code></h4>
+<pre><code class="language-python">schematic_model: DesignDataSchematicModel
+</code></pre>
+<p>The components and nets in the loaded schematic snapshot.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignData.schematics"><code>schematics</code></h4>
+<pre><code class="language-python">schematics: tuple[DesignDataSchematicDocument, ...]
+</code></pre>
+<p>The schematic documents contained in the design.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignData.variants"><code>variants</code></h4>
+<pre><code class="language-python">variants: tuple[DesignDataVariant, ...]
+</code></pre>
+<p>The project variants defined in the design.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignData.version"><code>version</code></h4>
+<pre><code class="language-python">version: str | None
+</code></pre>
+<p>The version of the design data.</p>
+<h3 class="sdk-class" id="altium_api.v1.BooleanHeuristic"><code>BooleanHeuristic</code></h3>
+<p>A Boolean inferred by the service, such as whether a net carries power.</p>
+<h4 class="sdk-field" id="altium_api.v1.BooleanHeuristic.confidence"><code>confidence</code></h4>
+<pre><code class="language-python">confidence: str
+</code></pre>
+<p>The confidence label the service assigned to this inference.</p>
+<h4 class="sdk-field" id="altium_api.v1.BooleanHeuristic.value"><code>value</code></h4>
+<pre><code class="language-python">value: bool
+</code></pre>
+<p>The inferred Boolean result. A false result is distinct from an absent heuristic.</p>
+<h3 class="sdk-class" id="altium_api.v1.DesProjectParameter"><code>DesProjectParameter</code></h3>
+<p>A parameter describing the project.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesProjectParameter.name"><code>name</code></h4>
+<pre><code class="language-python">name: str
+</code></pre>
+<p>Parameter name.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesProjectParameter.value"><code>value</code></h4>
+<pre><code class="language-python">value: str
+</code></pre>
+<p>Parameter value.</p>
+<h3 class="sdk-class" id="altium_api.v1.DesignDataComponent"><code>DesignDataComponent</code></h3>
+<p>Represents a component in the design.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataComponent.comment"><code>comment</code></h4>
+<pre><code class="language-python">comment: str | None
+</code></pre>
+<p>The comment associated with the component.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataComponent.component_category"><code>component_category</code></h4>
+<pre><code class="language-python">component_category: StringHeuristic | None
+</code></pre>
+<p>The component classification resolved by the semantic model at generation time.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataComponent.component_group"><code>component_group</code></h4>
+<pre><code class="language-python">component_group: StringHeuristic | None
+</code></pre>
+<p>The broader group derived from ComponentCategory, such as Audio for Microphone.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataComponent.component_type"><code>component_type</code></h4>
+<pre><code class="language-python">component_type: str | None
+</code></pre>
+<p>The first user-assigned component type tag retrieved from the vault.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataComponent.description"><code>description</code></h4>
+<pre><code class="language-python">description: str | None
+</code></pre>
+<p>The description of the component.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataComponent.design_component_id"><code>design_component_id</code></h4>
+<pre><code class="language-python">design_component_id: str | None
+</code></pre>
+<p>The unique identifier of the component within the design.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataComponent.designator"><code>designator</code></h4>
+<pre><code class="language-python">designator: str | None
+</code></pre>
+<p>The designator of the component.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataComponent.document_id"><code>document_id</code></h4>
+<pre><code class="language-python">document_id: str | None
+</code></pre>
+<p>The identifier of the document containing the component.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataComponent.footprint"><code>footprint</code></h4>
+<pre><code class="language-python">footprint: str | None
+</code></pre>
+<p>The footprint of the component.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataComponent.hierarchy_path"><code>hierarchy_path</code></h4>
+<pre><code class="language-python">hierarchy_path: str | None
+</code></pre>
+<p>The hierarchy path of the component.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataComponent.is_passive"><code>is_passive</code></h4>
+<pre><code class="language-python">is_passive: bool | None
+</code></pre>
+<p>Whether the resolved library component is passive, or null when not computed.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataComponent.library_component_id"><code>library_component_id</code></h4>
+<pre><code class="language-python">library_component_id: str | None
+</code></pre>
+<p>The identifier of the library component.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataComponent.library_id"><code>library_id</code></h4>
+<pre><code class="language-python">library_id: int | None
+</code></pre>
+<p>The generation-local library identifier within this component's variant context.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataComponent.mpn"><code>mpn</code></h4>
+<pre><code class="language-python">mpn: str | None
+</code></pre>
+<p>The manufacturer part number resolved from parameters or the part catalog.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataComponent.parameters"><code>parameters</code></h4>
+<pre><code class="language-python">parameters: tuple[DesignDataComponentParameter | None, ...] | None
+</code></pre>
+<p>Component and part parameters merged case-insensitively, using the first non-empty value with component parameters first.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataComponent.pins"><code>pins</code></h4>
+<pre><code class="language-python">pins: tuple[DesignDataPin, ...]
+</code></pre>
+<p>The pins from all parts of the component.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataComponent.pins_definitions"><code>pins_definitions</code></h4>
+<pre><code class="language-python">pins_definitions: tuple[str, ...] | None
+</code></pre>
+<p>The pin definitions produced by the semantic library.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataComponent.sheet"><code>sheet</code></h4>
+<pre><code class="language-python">sheet: str | None
+</code></pre>
+<p>The resolved schematic sheet name, falling back to its document identifier.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataComponent.tag_types"><code>tag_types</code></h4>
+<pre><code class="language-python">tag_types: tuple[str, ...] | None
+</code></pre>
+<p>The tag types of the component.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataComponent.test"><code>test</code></h4>
+<pre><code class="language-python">test: str | None
+</code></pre>
+<p>TEST.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataComponent.unique_id"><code>unique_id</code></h4>
+<pre><code class="language-python">unique_id: str | None
+</code></pre>
+<p>The unique identifier of the component.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataComponent.value"><code>value</code></h4>
+<pre><code class="language-python">value: str | None
+</code></pre>
+<p>The component value resolved from its parameters.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataComponent.variant_id"><code>variant_id</code></h4>
+<pre><code class="language-python">variant_id: str | None
+</code></pre>
+<p>The variant identifier of the component.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataComponent.variant_name"><code>variant_name</code></h4>
+<pre><code class="language-python">variant_name: str | None
+</code></pre>
+<p>The variant name of the component.</p>
+<h3 class="sdk-class" id="altium_api.v1.DesignDataComponentParameter"><code>DesignDataComponentParameter</code></h3>
+<p>Represents a parameter associated with a component.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataComponentParameter.name"><code>name</code></h4>
+<pre><code class="language-python">name: str | None
+</code></pre>
+<p>The name of the parameter.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataComponentParameter.value"><code>value</code></h4>
+<pre><code class="language-python">value: str | None
+</code></pre>
+<p>The value of the parameter.</p>
+<h3 class="sdk-class" id="altium_api.v1.DesignDataConfiguration"><code>DesignDataConfiguration</code></h3>
+<p>Represents the configuration settings for a design.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataConfiguration.custom_checks"><code>custom_checks</code></h4>
+<pre><code class="language-python">custom_checks: tuple[DesignDataCustomCheckConfigurationItem, ...]
+</code></pre>
+<p>The custom check configurations defined for the design.</p>
+<h3 class="sdk-class" id="altium_api.v1.DesignDataCustomCheckConfigurationItem"><code>DesignDataCustomCheckConfigurationItem</code></h3>
+<p>Represents a custom check configuration item in the design.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataCustomCheckConfigurationItem.custom_check_id"><code>custom_check_id</code></h4>
+<pre><code class="language-python">custom_check_id: str
+</code></pre>
+<p>The identifier of the custom check.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataCustomCheckConfigurationItem.error_report_level"><code>error_report_level</code></h4>
+<pre><code class="language-python">error_report_level: str
+</code></pre>
+<p>The error level at which violations of this check are reported. Known values: NO_REPORT, WARNING, ERROR, FATAL. New values may be added; clients must tolerate unknown values.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataCustomCheckConfigurationItem.name"><code>name</code></h4>
+<pre><code class="language-python">name: str
+</code></pre>
+<p>The name of the custom check.</p>
+<h3 class="sdk-class" id="altium_api.v1.DesignDataDifferentialPair"><code>DesignDataDifferentialPair</code></h3>
+<p>Represents a differential pair and its associated positive and negative nets.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataDifferentialPair.negative_net"><code>negative_net</code></h4>
+<pre><code class="language-python">negative_net: str | None
+</code></pre>
+<p>The name of the negative net in the differential pair.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataDifferentialPair.positive_net"><code>positive_net</code></h4>
+<pre><code class="language-python">positive_net: str | None
+</code></pre>
+<p>The name of the positive net in the differential pair.</p>
+<h3 class="sdk-class" id="altium_api.v1.DesignDataLine"><code>DesignDataLine</code></h3>
+<p>Represents a line segment in the design.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataLine.document_id"><code>document_id</code></h4>
+<pre><code class="language-python">document_id: str | None
+</code></pre>
+<p>The identifier of the document containing this line.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataLine.unique_id"><code>unique_id</code></h4>
+<pre><code class="language-python">unique_id: str | None
+</code></pre>
+<p>The unique identifier of the line.</p>
+<h3 class="sdk-class" id="altium_api.v1.DesignDataNet"><code>DesignDataNet</code></h3>
+<p>Represents a net (electrical connection) in the design.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataNet.calculated_net_name"><code>calculated_net_name</code></h4>
+<pre><code class="language-python">calculated_net_name: str | None
+</code></pre>
+<p>The calculated net name.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataNet.color"><code>color</code></h4>
+<pre><code class="language-python">color: int
+</code></pre>
+<p>The color value associated with the net.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataNet.diff_pair"><code>diff_pair</code></h4>
+<pre><code class="language-python">diff_pair: DesignDataDifferentialPair | None
+</code></pre>
+<p>Indicates whether the net is part of a differential pair.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataNet.diff_pair_classes"><code>diff_pair_classes</code></h4>
+<pre><code class="language-python">diff_pair_classes: tuple[str, ...] | None
+</code></pre>
+<p>The differential-pair classes resolved by the semantic library.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataNet.diff_pair_name"><code>diff_pair_name</code></h4>
+<pre><code class="language-python">diff_pair_name: str | None
+</code></pre>
+<p>The resolved differential-pair name, empty for a computed non-pair net.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataNet.is_diff_pair"><code>is_diff_pair</code></h4>
+<pre><code class="language-python">is_diff_pair: bool | None
+</code></pre>
+<p>Whether the net belongs to a differential pair, or null when not computed.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataNet.is_power"><code>is_power</code></h4>
+<pre><code class="language-python">is_power: BooleanHeuristic | None
+</code></pre>
+<p>Whether the net is classified as a power net, or null when not computed.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataNet.lines"><code>lines</code></h4>
+<pre><code class="language-python">lines: tuple[DesignDataLine, ...]
+</code></pre>
+<p>The lines that form the net.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataNet.name"><code>name</code></h4>
+<pre><code class="language-python">name: str | None
+</code></pre>
+<p>The name of the net.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataNet.net_classes"><code>net_classes</code></h4>
+<pre><code class="language-python">net_classes: tuple[str, ...]
+</code></pre>
+<p>The class of the net.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataNet.net_items"><code>net_items</code></h4>
+<pre><code class="language-python">net_items: tuple[DesignDataNetItem, ...]
+</code></pre>
+<p>The net items belonging to the net.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataNet.parameters"><code>parameters</code></h4>
+<pre><code class="language-python">parameters: tuple[DesignDataNetParameter, ...]
+</code></pre>
+<p>The parameters associated with the net.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataNet.pins"><code>pins</code></h4>
+<pre><code class="language-python">pins: tuple[DesignDataPin, ...]
+</code></pre>
+<p>The pins connected to the net.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataNet.rules"><code>rules</code></h4>
+<pre><code class="language-python">rules: tuple[DesignDataRule, ...]
+</code></pre>
+<p>The rules associated with the net.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataNet.scope"><code>scope</code></h4>
+<pre><code class="language-python">scope: str | None
+</code></pre>
+<p>The semantic net scope, including Unknown when the source cannot determine it.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataNet.unique_id"><code>unique_id</code></h4>
+<pre><code class="language-python">unique_id: str | None
+</code></pre>
+<p>The generation-local semantic identifier of this base-design net.</p>
+<h3 class="sdk-class" id="altium_api.v1.DesignDataNetItem"><code>DesignDataNetItem</code></h3>
+<p>Represents an item belonging to a net.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataNetItem.document_id"><code>document_id</code></h4>
+<pre><code class="language-python">document_id: str | None
+</code></pre>
+<p>The identifier of the document containing this net item.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataNetItem.kind"><code>kind</code></h4>
+<pre><code class="language-python">kind: str | None
+</code></pre>
+<p>The kind of the object.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataNetItem.port_name"><code>port_name</code></h4>
+<pre><code class="language-python">port_name: str | None
+</code></pre>
+<p>The port name associated with this net item.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataNetItem.unique_id"><code>unique_id</code></h4>
+<pre><code class="language-python">unique_id: str | None
+</code></pre>
+<p>The unique identifier of the net item.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataNetItem.variant_id"><code>variant_id</code></h4>
+<pre><code class="language-python">variant_id: str | None
+</code></pre>
+<p>The variant identifier of the net item.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataNetItem.variant_name"><code>variant_name</code></h4>
+<pre><code class="language-python">variant_name: str | None
+</code></pre>
+<p>The variant name of the net item.</p>
+<h3 class="sdk-class" id="altium_api.v1.DesignDataNetParameter"><code>DesignDataNetParameter</code></h3>
+<p>Represents a parameter associated with a net.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataNetParameter.name"><code>name</code></h4>
+<pre><code class="language-python">name: str | None
+</code></pre>
+<p>The name of the parameter.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataNetParameter.value"><code>value</code></h4>
+<pre><code class="language-python">value: str | None
+</code></pre>
+<p>The value of the parameter.</p>
+<h3 class="sdk-class" id="altium_api.v1.DesignDataPin"><code>DesignDataPin</code></h3>
+<p>Represents a pin on a component or part.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataPin.description"><code>description</code></h4>
+<pre><code class="language-python">description: str | None
+</code></pre>
+<p>The description of the pin.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataPin.designator"><code>designator</code></h4>
+<pre><code class="language-python">designator: str | None
+</code></pre>
+<p>The owning component's physical designator, falling back to its logical designator.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataPin.direction"><code>direction</code></h4>
+<pre><code class="language-python">direction: str | None
+</code></pre>
+<p>The semantic direction derived from the pin's electrical type.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataPin.document_id"><code>document_id</code></h4>
+<pre><code class="language-python">document_id: str | None
+</code></pre>
+<p>The identifier of the document containing the pin.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataPin.electrical_type"><code>electrical_type</code></h4>
+<pre><code class="language-python">electrical_type: str | None
+</code></pre>
+<p>The electrical type of the pin.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataPin.full_name"><code>full_name</code></h4>
+<pre><code class="language-python">full_name: str | None
+</code></pre>
+<p>The full name of the pin.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataPin.functions"><code>functions</code></h4>
+<pre><code class="language-python">functions: tuple[str, ...]
+</code></pre>
+<p>The electrical type of the pin.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataPin.name"><code>name</code></h4>
+<pre><code class="language-python">name: str | None
+</code></pre>
+<p>The name of the pin.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataPin.net"><code>net</code></h4>
+<pre><code class="language-python">net: str | None
+</code></pre>
+<p>The resolved net name, or null when connectivity is absent or ambiguous.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataPin.no_connect"><code>no_connect</code></h4>
+<pre><code class="language-python">no_connect: bool | None
+</code></pre>
+<p>Whether the pin is explicitly unconnected, or null when the source does not provide this information.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataPin.number"><code>number</code></h4>
+<pre><code class="language-python">number: str | None
+</code></pre>
+<p>The number of the pin.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataPin.parameters"><code>parameters</code></h4>
+<pre><code class="language-python">parameters: tuple[DesignDataPinParameter, ...]
+</code></pre>
+<p>The parameters associated with this pin.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataPin.propagation_delay"><code>propagation_delay</code></h4>
+<pre><code class="language-python">propagation_delay: float | None
+</code></pre>
+<p>The propagation delay of the pin.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataPin.unique_id"><code>unique_id</code></h4>
+<pre><code class="language-python">unique_id: str | None
+</code></pre>
+<p>The unique identifier of the pin.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataPin.variant_id"><code>variant_id</code></h4>
+<pre><code class="language-python">variant_id: str | None
+</code></pre>
+<p>The variant identifier of the pin.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataPin.variant_name"><code>variant_name</code></h4>
+<pre><code class="language-python">variant_name: str | None
+</code></pre>
+<p>The variant name of the pin.</p>
+<h3 class="sdk-class" id="altium_api.v1.DesignDataPinParameter"><code>DesignDataPinParameter</code></h3>
+<p>Represents a parameter associated with a pin.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataPinParameter.name"><code>name</code></h4>
+<pre><code class="language-python">name: str | None
+</code></pre>
+<p>The name of the parameter.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataPinParameter.value"><code>value</code></h4>
+<pre><code class="language-python">value: str | None
+</code></pre>
+<p>The value of the parameter.</p>
+<h3 class="sdk-class" id="altium_api.v1.DesignDataRule"><code>DesignDataRule</code></h3>
+<p>Represents a rule associated with a net.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataRule.attributes"><code>attributes</code></h4>
+<pre><code class="language-python">attributes: tuple[DesignDataRuleAttribute, ...]
+</code></pre>
+<p>The collection of attributes associated with the rule.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataRule.name"><code>name</code></h4>
+<pre><code class="language-python">name: str | None
+</code></pre>
+<p>The name of the net rule.</p>
+<h3 class="sdk-class" id="altium_api.v1.DesignDataRuleAttribute"><code>DesignDataRuleAttribute</code></h3>
+<p>Represents an attribute associated with a rule.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataRuleAttribute.name"><code>name</code></h4>
+<pre><code class="language-python">name: str
+</code></pre>
+<p>The name of the attribute.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataRuleAttribute.value"><code>value</code></h4>
+<pre><code class="language-python">value: str | None
+</code></pre>
+<p>The value of the attribute.</p>
+<h3 class="sdk-class" id="altium_api.v1.DesignDataSchematicDocument"><code>DesignDataSchematicDocument</code></h3>
+<p>Represents a schematic document in the design.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataSchematicDocument.document_id"><code>document_id</code></h4>
+<pre><code class="language-python">document_id: str | None
+</code></pre>
+<p>The identifier of the schematic document.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataSchematicDocument.file_name"><code>file_name</code></h4>
+<pre><code class="language-python">file_name: str | None
+</code></pre>
+<p>The file name of the schematic document.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataSchematicDocument.parent_document_ids"><code>parent_document_ids</code></h4>
+<pre><code class="language-python">parent_document_ids: tuple[str, ...]
+</code></pre>
+<p>The identifiers of the logical parent documents, or an empty collection for a root document.</p>
+<h3 class="sdk-class" id="altium_api.v1.DesignDataSchematicModel"><code>DesignDataSchematicModel</code></h3>
+<p>The schematic portion of the design, containing components and nets for the requested variant selection.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataSchematicModel.components"><code>components</code></h4>
+<pre><code class="language-python">components: tuple[DesignDataComponent, ...]
+</code></pre>
+<p>Components in this snapshot. Each component carries its pins and parameters.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataSchematicModel.nets"><code>nets</code></h4>
+<pre><code class="language-python">nets: tuple[DesignDataNet, ...]
+</code></pre>
+<p>Electrical nets in this snapshot, including their pins and attached design rules.</p>
+<h3 class="sdk-class" id="altium_api.v1.DesignDataVariant"><code>DesignDataVariant</code></h3>
+<p>Represents a project variant in the design.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataVariant.name"><code>name</code></h4>
+<pre><code class="language-python">name: str
+</code></pre>
+<p>The name of the variant.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataVariant.variant_guid"><code>variant_guid</code></h4>
+<pre><code class="language-python">variant_guid: str | None
+</code></pre>
+<p>The unique identifier of the variant.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataVariant.variations"><code>variations</code></h4>
+<pre><code class="language-python">variations: tuple[DesignDataVariation, ...]
+</code></pre>
+<p>The variations defined within this variant.</p>
+<h3 class="sdk-class" id="altium_api.v1.DesignDataVariation"><code>DesignDataVariation</code></h3>
+<p>Represents a variation applied to a component within a project variant.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataVariation.alternate_part"><code>alternate_part</code></h4>
+<pre><code class="language-python">alternate_part: str | None
+</code></pre>
+<p>The alternate part identifier, if the variation kind is Alternate.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataVariation.component_designator"><code>component_designator</code></h4>
+<pre><code class="language-python">component_designator: str | None
+</code></pre>
+<p>The designator of the component this variation applies to.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataVariation.component_hierarchy_path"><code>component_hierarchy_path</code></h4>
+<pre><code class="language-python">component_hierarchy_path: str | None
+</code></pre>
+<p>The hierarchy path of the component this variation applies to.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataVariation.component_unique_id"><code>component_unique_id</code></h4>
+<pre><code class="language-python">component_unique_id: str | None
+</code></pre>
+<p>The unique identifier of the component.</p>
+<h4 class="sdk-field" id="altium_api.v1.DesignDataVariation.kind"><code>kind</code></h4>
+<pre><code class="language-python">kind: str
+</code></pre>
+<p>The kind of variation. Known values: NONE, NOT_FITTED, ALTERNATE. New values may be added; clients must tolerate unknown values.</p>
+<h3 class="sdk-class" id="altium_api.v1.StringHeuristic"><code>StringHeuristic</code></h3>
+<p>A text classification inferred by the service, such as a component category or group.</p>
+<h4 class="sdk-field" id="altium_api.v1.StringHeuristic.confidence"><code>confidence</code></h4>
+<pre><code class="language-python">confidence: str
+</code></pre>
+<p>The confidence label the service assigned to this inference.</p>
+<h4 class="sdk-field" id="altium_api.v1.StringHeuristic.value"><code>value</code></h4>
+<pre><code class="language-python">value: str
+</code></pre>
+<p>The classification label assigned to the design object.</p>
 
 
 
@@ -2178,6 +4522,7 @@ and <code>net.is_power</code>; check for <code>None</code> before reading <code>
 
 
                 
+
               </article>
             </div>
           
@@ -2226,7 +4571,7 @@ and <code>net.is_power</code>; check for <code>None</code> before reading <code>
       document.querySelectorAll('.md-header__topic').forEach(function (topic) {
         var span = document.createElement('span');
         span.className = 'md-header-build-date';
-        span.textContent = 'Built: 2026-11-19 14:28 UTC';
+        span.textContent = 'Built: 2026-11-19 15:00 UTC';
         topic.appendChild(span);
       });
     });

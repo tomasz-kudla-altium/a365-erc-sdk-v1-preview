@@ -39,3 +39,35 @@ h3.doc.doc-heading {
   display: flex;
   align-items: center;
 }
+
+.sdk-version {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: .45rem;
+  font-size: .7rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.sdk-version select {
+  appearance: auto;
+  padding: .15rem .35rem;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: .15rem;
+  color: var(--md-default-fg-color);
+  background: var(--md-default-bg-color);
+}
+
+.md-typeset h3.sdk-class {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-typeset h4.sdk-field {
+  margin-bottom: .35rem;
+}
+
+.sdk-field + pre, .sdk-field + .highlight {
+  border-left: .15rem solid var(--md-accent-fg-color);
+}
